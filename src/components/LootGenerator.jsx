@@ -45,6 +45,7 @@ function LootGenerator() {
   const [enabledSources, setEnabledSources] = useState(allSources);
   const [generatedTable, setGeneratedTable] = useState([]);
   const [copyMessage, setCopyMessage] = useState("");
+  const [showCustomItems, setShowCustomItems] = useState(false);
 
   /*
     =========================
@@ -404,32 +405,48 @@ function LootGenerator() {
       )}
 
       {customItems.length > 0 && (
-        <div className="custom-items-panel">
-          <h3>My Custom Items</h3>
-
-          <div className="custom-items-list">
-            {customItems.map((item) => (
-              <div key={item.id} className="custom-item-card">
-                <div>
-                  <strong>{item.name}</strong>
-                  <div className="custom-item-meta">
-                    {item.category} • {item.rarity} • {item.source} • slots: {item.slots}
-                  </div>
-                </div>
-
-                <div className="custom-item-actions">
-                  <button type="button" onClick={() => handleEditCustomItem(item)}>
-                    Edit
-                  </button>
-                  <button type="button" onClick={() => handleDeleteCustomItem(item.id)}>
-                    Delete
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
+  <div className="custom-items-panel">
+    <div className="collapsible-header">
+      <div>
+        <h3>My Custom Items</h3>
+        <div className="custom-item-meta">
+          {customItems.length} item{customItems.length !== 1 ? "s" : ""}
         </div>
-      )}
+      </div>
+
+      <button
+        type="button"
+        onClick={() => setShowCustomItems((prev) => !prev)}
+      >
+        {showCustomItems ? "Hide Items" : "Show Items"}
+      </button>
+    </div>
+
+    {showCustomItems && (
+      <div className="custom-items-list">
+        {customItems.map((item) => (
+          <div key={item.id} className="custom-item-card">
+            <div>
+              <strong>{item.name}</strong>
+              <div className="custom-item-meta">
+                {item.category} • {item.rarity} • {item.source} • slots: {item.slots}
+              </div>
+            </div>
+
+            <div className="custom-item-actions">
+              <button type="button" onClick={() => handleEditCustomItem(item)}>
+                Edit
+              </button>
+              <button type="button" onClick={() => handleDeleteCustomItem(item.id)}>
+                Delete
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+    )}
+  </div>
+)}
 
       <h3>Generated Table</h3>
 

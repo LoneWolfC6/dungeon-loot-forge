@@ -33,6 +33,7 @@ function SpellGenerator() {
   const [spellRoll, setSpellRoll] = useState("");
   const [generatedSpellTable, setGeneratedSpellTable] = useState([]);
   const [copyMessage, setCopyMessage] = useState("");
+  const [showCustomSpells, setShowCustomSpells] = useState(false);
 
   /*
     =========================
@@ -291,32 +292,48 @@ function SpellGenerator() {
       )}
 
       {customSpells.length > 0 && (
-        <div className="custom-items-panel">
-          <h3>My Custom Spells</h3>
-
-          <div className="custom-items-list">
-            {customSpells.map((spell) => (
-              <div key={spell.id} className="custom-item-card">
-                <div>
-                  <strong>{spell.name}</strong>
-                  <div className="custom-item-meta">
-                    {spell.level === "cantrip" ? "Cantrip" : `Level ${spell.level}`}
-                  </div>
-                </div>
-
-                <div className="custom-item-actions">
-                  <button type="button" onClick={() => handleEditCustomSpell(spell)}>
-                    Edit
-                  </button>
-                  <button type="button" onClick={() => handleDeleteCustomSpell(spell.id)}>
-                    Delete
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
+  <div className="custom-items-panel">
+    <div className="collapsible-header">
+      <div>
+        <h3>My Custom Spells</h3>
+        <div className="custom-item-meta">
+          {customSpells.length} spell{customSpells.length !== 1 ? "s" : ""}
         </div>
-      )}
+      </div>
+
+      <button
+        type="button"
+        onClick={() => setShowCustomSpells((prev) => !prev)}
+      >
+        {showCustomSpells ? "Hide Spells" : "Show Spells"}
+      </button>
+    </div>
+
+    {showCustomSpells && (
+      <div className="custom-items-list">
+        {customSpells.map((spell) => (
+          <div key={spell.id} className="custom-item-card">
+            <div>
+              <strong>{spell.name}</strong>
+              <div className="custom-item-meta">
+                {spell.level === "cantrip" ? "Cantrip" : `Level ${spell.level}`}
+              </div>
+            </div>
+
+            <div className="custom-item-actions">
+              <button type="button" onClick={() => handleEditCustomSpell(spell)}>
+                Edit
+              </button>
+              <button type="button" onClick={() => handleDeleteCustomSpell(spell.id)}>
+                Delete
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+    )}
+  </div>
+)}
 
       <h3>Generated Table</h3>
 
