@@ -161,13 +161,7 @@
   { "name": "Barrier Tattoo (Uncommon)", "slots": 1, "source": "Tasha's Cauldron of Everything" },
   { "name": "Spellwrought Tattoo (2nd-level)", "slots": 1, "source": "Tasha's Cauldron of Everything" },
   { "name": "Spellwrought Tattoo (3rd-level)", "slots": 1, "source": "Tasha's Cauldron of Everything" },
-  { "name": "Glamerweave (Uncommon)", "slots": 1, "source": "Wayfinder’s Guide to Eberron" },
-
-  { "name": "Amulet of Locate Creature",                      "slots": 2, "source": "Homebrew" },
-  { "name": "Blackblood Salve",                               "slots": 2, "source": "Homebrew" },
-  { "name": "Charm of the Fleet Stag",                        "slots": 2, "source": "Homebrew" },
-  { "name": "Experimental Brews",                             "slots": 2, "source": "Homebrew" },
-  { "name": "Potion of Mind Shielding",                       "slots": 2, "source": "Homebrew" }
+  { "name": "Glamerweave (Uncommon)", "slots": 1, "source": "Wayfinder’s Guide to Eberron" }
 ],
 
   "arcana-rare": [
@@ -292,21 +286,7 @@
   { "name": "Barrier Tattoo (Rare)", "slots": 1, "source": "Tasha's Cauldron of Everything" },
   { "name": "Spellwrought Tattoo (4th-level)", "slots": 1, "source": "Tasha's Cauldron of Everything" },
   { "name": "Spellwrought Tattoo (5th-level)", "slots": 1, "source": "Tasha's Cauldron of Everything" },
-  { "name": "Docent", "slots": 1, "source": "Wayfinder’s Guide to Eberron" },
-
-  { "name": "Bone Charm of Kelemvor",                            "slots": 1, "source": "Homebrew" },
-  { "name": "Charm of the Rootwalker",                           "slots": 1, "source": "Homebrew" },
-  { "name": "Echo String",                                       "slots": 1, "source": "Homebrew" },
-  { "name": "Masque of Blooming Lies",                           "slots": 1, "source": "Homebrew" },
-  { "name": "Mirror of Triumph",                                 "slots": 1, "source": "Homebrew" },
-  { "name": "Perfumed Dust of Daring",                           "slots": 1, "source": "Homebrew" },
-  { "name": "Ring of Netherglass Protection",                    "slots": 2, "source": "Homebrew" },
-  { "name": "Scribe’s Oathband",                                 "slots": 1, "source": "Homebrew" },
-  { "name": "Seed of Echoing Step",                              "slots": 1, "source": "Homebrew" },
-  { "name": "Sunforged Medallion",                               "slots": 2, "source": "Homebrew" },
-  { "name": "Veil of Poised Defiance",                           "slots": 1, "source": "Homebrew" },
-  { "name": "Vial of Stabilized Flux",                           "slots": 2, "source": "Homebrew" },
-  { "name": "Wine-Stained Ribbon",                               "slots": 1, "source": "Homebrew" }
+  { "name": "Docent", "slots": 1, "source": "Wayfinder’s Guide to Eberron" }
 ],
 
 
@@ -474,9 +454,7 @@
   { "name": "Dragon’s Wrath Weapon (Slumbering)",        "slots": 2, "source": "FToD" },
   { "name": "Champion’s Weapon",                         "slots": 2, "source": "Drakkenheim" },
   { "name": "Dazing Hammer",                             "slots": 2, "source": "Drakkenheim" },
-  { "name": "True Name (Uncommon)", "slots": 2, "source": "The Illrigger Revised" },
-
-  { "name": "Bahamut’s Fire",                            "slots": 2, "source": "Homebrew" }
+  { "name": "True Name (Uncommon)", "slots": 2, "source": "The Illrigger Revised" }
 ],
 
 "armaments-rare": [
@@ -540,13 +518,7 @@
 
   { "name": "Monster Hunter’s Weapon (Rare)",            "slots": 2, "source": "Drakkenheim" },
   { "name": "Devotee’s Censer", "slots": 2, "source": "Tasha's Cauldron of Everything" },
-  { "name": "True Name (Rare)", "slots": 2, "source": "The Illrigger Revised" },
-
-  { "name": "Ashveil Charge",                            "slots": 1, "source": "Homebrew" },
-  { "name": "Dark Chain Mail +1",                        "slots": 1, "source": "Homebrew" },
-  { "name": "Fang of Stillwater",                        "slots": 1, "source": "Homebrew" },
-  { "name": "Flametongue Battleaxe +1",                  "slots": 2, "source": "Homebrew" },
-  { "name": "Flametongue Greataxe +1",                   "slots": 2, "source": "Homebrew" }
+  { "name": "True Name (Rare)", "slots": 2, "source": "The Illrigger Revised" }
 ]
 ,
 
@@ -759,10 +731,7 @@
   { "name": "Rope of Entanglement",                   "slots": 4,  "source": "DMG" },
   { "name": "Staff of Healing",                       "slots": 4,  "source": "DMG" },
   { "name": "Wand of Enemy Detection",                "slots": 4,  "source": "DMG" },
-  { "name": "Butcher’s Bib",                          "slots": 1, "source": "EGtW" },
-
-  { "name": "Arc-conduit Gauntlet",                   "slots": 1,  "source": "Homebrew" },
-  { "name": "Wand of Mass Healing Word",              "slots": 1,  "source": "Homebrew" }
+  { "name": "Butcher’s Bib",                          "slots": 1, "source": "EGtW" }
 ]
 ,
 
